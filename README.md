@@ -1,5 +1,5 @@
-# BTT-Vivid-RFID-Standalone-for-Klipper-AFC
-This project provides a standalone RFID integration for the BTT Vivid in Klipper.
+# Vivid-RFID-e-for-Klipper-AFC
+
 
 👉 RFID only
 👉 No MMS motion control
@@ -18,33 +18,45 @@ This setup is intentionally minimal:
 ❌ No MMS movement
 ❌ No slot logic
 ❌ No AFC conflicts
+
 ✅ Requirements
-Klipper,Mainsail installed
+Klipper v ,Mainsail min. v2.9  installed
+
 BTT Vivid ( flashed with newer Klipper Firmware)
 MFRC522 RFID reader
 AFC system (optional)
-MIFARE Classic 1K/4K (S50/S70) Tags
 
-❗ Not supported:
+MIFARE Classic 1K/4K (S50/S70) Tags supported detect, read and write
 
-NTAG213 / NTAG215 / NTAG216
-MIFARE Ultralight
+❗ Not supported for write only detect and read: MIFARE Ultralight NTAG213 / NTAG215 / NTAG216
+
+
+
 
 📦 Installation
 
-1. Clone repository
+1.  cd ~
+    git clone https://github.com/bigtreetech/BIGTREETECH_MMS.git
+    cd ~/BIGTREETECH_MMS
+    ./install.sh
+    
+2.  Die letzten zwei Fragen kann mant mit nein beantworten . Alle include vom BIGTREETECH auskommentieren
+
+3. 
    cd ~
-   git clone https://github.com/Morisk78/BTT-Vivid-RFID-Standalone-f-r-Klipper-AFC-
-   .git
+   git clone https://github.com/Morisk78/Vivid-RFID-for-Klipper-AFC-.git
 
-3. Copy MMS folder cp -r vivid-rfid/mms ~home/pi/klipper/klippy/extras
+  
+5. Ersetzten sie den kompletten Ordner in /home/pi/klipper/klippy/extras/mms only mms from mms out of Vivid-RFID-for-Klipper-AFC- folder
 
-4. Copy config  
-   cp vivid-rfid/config/vivid_rfid.cfg ~home/pi/printer_data/config/
+5. Copy MMS folder  vivid-rfid/mms ~home/pi/klipper/klippy/extras
 
-   cp vivid-rfid/config/rfid_macros.cfg ~home/pi/printer_data/config/
+6. Copy config  
+   /config/vivid_rfid.cfg  in /home/pi/printer_data/config/
 
-6. Restart Klipper
+   /config/rfid_macros.cfg  in  /home/pi/printer_data/config/
+
+7. Restart Klipper
    sudo service klipper restart
 
 8. Include in printer.cfg
