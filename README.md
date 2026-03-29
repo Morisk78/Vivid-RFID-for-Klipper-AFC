@@ -56,8 +56,7 @@ MIFARE Classic 1K/4K (S50/S70) Tags supported detect, read and write
 
    /config/rfid_macros.cfg  in  /home/pi/printer_data/config/
 
-7. Restart Klipper
-   sudo service klipper restart
+7. install Gcode shell commands from Kiauh
 
 8. Include in printer.cfg
    [include vivid_rfid.cfg]
