@@ -71,9 +71,18 @@ MIFARE Classic 1K/4K (S50/S70) Tags supported detect, read and write
 
 
 
-   <img width="332" height="243" alt="Screenshot 2026-03-25 223735" src="https://github.com/user-attachments/assets/04185b98-f317-4c0e-b6c8-59d6575c2607" />
 
-   <img width="755" height="308" alt="image" src="https://github.com/user-attachments/assets/e34d05c2-9a90-4c4e-bede-6e11d5f7a477" />
+<img width="326" height="266" alt="Screenshot button" src="https://github.com/user-attachments/assets/1284a746-f9a9-412d-b832-ebed1fa4e1fa" />
+
+  
+
+
+
+
+<img width="359" height="256" alt="Screenshot profilauswahl" src="https://github.com/user-attachments/assets/310bc9c1-5050-4cc9-9564-de783b488ccd" />
+
+
+
 
 
 
